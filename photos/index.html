@@ -57,46 +57,43 @@
                 transform: translateY(0);
             }
         }
+        @media (min-width: 1025px) {
+    .images {
+        flex-direction: row; /* Arrange images side by side */
+        justify-content: center; /* Center images horizontally */
+    }
+
+    .images img {
+        max-width: 45%; /* Set to 45% to fit two images side by side */
+        margin: 10px; /* Space between images */
+    }
+}
 
         @media (max-width: 600px) {
-            h1 {
-                font-size: 2.5em; /* Adjusted font size for smaller screens */
-            }
+    h1 {
+        font-size: 2.5em; /* Adjusted font size for smaller screens */
+    }
 
-            h2 {
-                font-size: 1.5em; /* Adjusted font size for smaller screens */
-            }
+    h2 {
+        font-size: 1.5em; /* Adjusted font size for smaller screens */
+    }
 
-            .images img {
-                max-width: 150px; /* Smaller max width for images on very small screens */
-            }
-        }
+    .images img {
+        max-width: 90%; /* Set to 90% for better fit on mobile */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
 
-        @media (min-width: 601px) and (max-width: 1024px) {
-            .images {
-                flex-direction: column; /* Stack images vertically on smaller screens */
-            }
+@media (min-width: 601px) and (max-width: 1024px) {
+    .images {
+        flex-direction: column; /* Stack images vertically on smaller screens */
+    }
 
-            .images img {
-                max-width: 300px; /* Adjust max width for images on medium screens */
-            }
-        }
-
-        @media (min-width: 1025px) and (max-width: 2560px) {
-            .images {
-                flex-direction: row; /* Side by side on larger screens */
-            }
-
-            .images img {
-                max-width: 500px; /* Max width for images on larger screens */
-            }
-        }
-
-        @media (min-width: 2561px) {
-            .images {
-                flex-direction: row; /* Keep side by side on very large screens */
-            }
-        }
+    .images img {
+        max-width: 80%; /* Set to 80% for better fit on tablets */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
     </style>
 </head>
 <body>
