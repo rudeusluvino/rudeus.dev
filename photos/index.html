@@ -15,39 +15,40 @@
             align-items: center;
             justify-content: center;
             text-align: center;
-            padding: 20px; /* Added padding for better spacing */
+            padding: 20px; 
         }
 
         h1 {
-            font-size: 4em; /* Main title size */
-            margin-bottom: 10px; /* Space below h1 */
+            font-size: 4em; 
+            margin-bottom: 10px; 
             opacity: 0;
             transform: translateY(-20px);
             animation: fadeInUp 1s forwards 0.5s;
         }
 
         h2 {
-            font-size: 1.3em; /* Subtitle size */
-            margin-top: 0; /* No space above h2 */
+            font-size: 1.3em; 
+            margin-top: 0; 
             opacity: 0;
             transform: translateY(-20px);
             animation: fadeInUp 1s forwards 1s;
+            color: #6d6d6d;
         }
 
         .images {
             display: flex;
-            flex-direction: column; /* Stack images vertically by default */
-            align-items: center; /* Center images horizontally */
+            flex-direction: column; 
+            align-items: center; 
             opacity: 0;
             animation: fadeInUp 1s forwards 1.5s;
-            margin-top: 30px; /* Space above images */
+            margin-top: 30px; 
         }
 
         .images img {
-            width: 100%; /* Full width */
-            max-width: 500px; /* Max width for images set to 500px */
-            height: auto; /* Maintain aspect ratio */
-            margin: 10px; /* Space between images */
+            width: 100%; 
+            max-width: 500px; 
+            height: auto; 
+            margin: 10px; 
             border-radius: 10px;
         }
 
@@ -59,39 +60,39 @@
         }
         @media (min-width: 1025px) {
     .images {
-        flex-direction: row; /* Arrange images side by side */
-        justify-content: center; /* Center images horizontally */
+        flex-direction: row; 
+        justify-content: center; 
     }
 
     .images img {
-        max-width: 45%; /* Set to 45% to fit two images side by side */
-        margin: 10px; /* Space between images */
+        max-width: 45%; 
+        margin: 10px; 
     }
 }
 
         @media (max-width: 600px) {
     h1 {
-        font-size: 2.5em; /* Adjusted font size for smaller screens */
+        font-size: 2.5em; /
     }
 
     h2 {
-        font-size: 1.5em; /* Adjusted font size for smaller screens */
+        font-size: 1.5em; 
     }
 
     .images img {
-        max-width: 90%; /* Set to 90% for better fit on mobile */
-        height: auto; /* Maintain aspect ratio */
+        max-width: 90%;
+        height: auto; 
     }
 }
 
 @media (min-width: 601px) and (max-width: 1024px) {
     .images {
-        flex-direction: column; /* Stack images vertically on smaller screens */
+        flex-direction: column; /
     }
 
     .images img {
-        max-width: 80%; /* Set to 80% for better fit on tablets */
-        height: auto; /* Maintain aspect ratio */
+        max-width: 80%; 
+        height: auto; 
     }
 }
     </style>
@@ -102,8 +103,8 @@
     <h2>Graphic Designer & Freelancer</h2>
 
     <div class="images">
-        <img src="img1.svg" alt="Image 1"> <!-- First image -->
-        <img src="img2.svg"Image 2"> <!-- Second image -->
+        <img src="img1.svg" alt="Image 1"> 
+        <img src="img2.svg"Image 2"> 
     </div>
 
 </body>
